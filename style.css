@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    overflow: scroll;
+}
+.container{
+    width: 100%;
+    min-height:100vh;
+    background-color: rgb(53, 53, 67);
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    z-index: 111;
+}
+.Logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.navItems{
+    display: flex;
+}
+.navItems li{
+    list-style: none;
+    margin: 20px 20px;
+}
+.navItems li a.home{
+    color: white;
+}
+.navItems li a{
+    font-size: 20px;
+    color: rgb(117, 117, 124);
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navItems li:hover a{
+    color: bisque;
+}
+.links a{
+    font-size: 20px;
+    color: white;
+    margin:20px;
+    position: relative;
+    top: 18px;
+}
+.content{
+    position: relative;
+    padding-top: 100px;
+    z-index: 4;
+}
+.content h1{
+    color: white;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 1;
+    margin-left: 80px;
+    margin-bottom: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content h2{
+    color: rgb(117, 117, 124);
+    font-size: 45px;
+    margin-left: 80px;
+    line-height: 1;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content h3{
+    color: orange;
+    font-size: 30px;
+    font-weight: 70px;
+    margin-left: 80px;
+    line-height: 1;
+    margin-bottom: 15px;
+    position: relative;
+    bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content p{
+    color: rgb(117, 117, 124);
+    font-size: 16px;
+    margin-left: 80px;
+    font-weight: bold;
+    font-weight: normal;
+    line-height: 1.85;
+    margin-bottom: 30px;
+}
+.middle{
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgb(45, 45, 57);
+    border-radius: 50%;
+}
+.middle img{
+    height: 490px;
+    width: 490px;
+    position: relative;
+    top: 30px;
+}
+.content2{
+    position: absolute;
+    right: 250px;
+    bottom: 335px;
+    z-index: 3;
+}
+.content2 h4{
+    color: rgb(143, 143, 143);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 0px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content2 p{
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+.content2 p.showmore{
+    color: orange;
+}
+.content2 p.showmore i{
+    padding-left: 8px;
+    padding-top: 10px;
+}
+.contacts{
+    position: absolute;
+    right: 80%;
+    bottom: -60%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(72, 72, 90);
+    border-radius: 50%;
+    height: 39px;
+    width: 39px;
+}
+.contacts a{
+    font-size: 20px;
+    color: orange;
+    margin: 13px;
+    position: relative;
+    top: 10px;
+}
+.contacts1{
+    position: absolute;
+    right: 60%;
+    bottom: -60%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(72, 72, 90);
+    border-radius: 50%;
+    height: 39px;
+    width: 39px;
+}
+.contacts1 a{
+    font-size: 20px;
+    color: orange;
+    margin: 10px;
+    position: relative;
+    top: 9px;
+}
+.contacts2{
+    position: absolute;
+    right: 40%;
+    bottom: -60%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(72, 72, 90);
+    border-radius: 50%;
+    height: 39px;
+    width: 39px;
+}
+.contacts2 a{
+    font-size: 20px;
+    color: orange;
+    margin: 10px;
+    position: relative;
+    top: 9px;
+}
+.contacts3{
+    position: absolute;
+    right: 20%;
+    bottom: -60%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(72, 72, 90);
+    border-radius: 50%;
+    height: 39px;
+    width: 39px;
+}
+.contacts3 a{
+    font-size: 20px;
+    color: orange;
+    margin: 10px;
+    position: relative;
+    top: 9px;
+}
+.social{
+    height: 20vh;
+    width: 80%;
+    background-color: rgb(63, 63, 80);
+    position: relative;
+    left: 130px;
+    top: 60px;
+}
+.socialmedia img{
+    height: 60px;
+    width: 150px;
+}
+.socialmedia img.google{
+    height: 50px;
+    width: 150px;
+    padding: 5px 20px;
+    position: relative;
+    top: 6px;    
+}
+.socialmedia{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: center;
+    gap: 3rem;
+}
+.meta{
+    padding: 1px 10px;
+    background-color: rgb(53, 53, 67);
+    border-radius: 0.4rem;
+    text-align: center;
+    position: relative;
+    top: 35px;
+}
+.container3{
+    background-color: rgb(40, 40, 51);
+    height: 1000px;
+}
+.servicesinfo{
+    position: relative;
+    padding-top: 200px;
+    z-index: 4;
+    margin-left: 80px;
+}
+.servicesinfo h1{
+    font-weight: bolder;
+    letter-spacing: 4px;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+.servicesinfo p{
+    color: white;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.milestone{
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 50px);
+    gap: 3rem;
+}
+.number{
+    color: orange;
+    letter-spacing: 1px;
+}
+h5{
+    color: white;
+    text-indent: -30px;
+    position: relative;
+    left: 30px;
+    margin-top: 7px;
+}
+.skills{
+    position: relative;
+    left: 700px;
+    bottom: 800px;
+}
+.cont h2{
+    position: relative;
+    left: 180px;
+    bottom: 70px;
+    color: white;
+}
+.cont p{
+    position: relative;
+    left: 180px;
+    bottom: 70px;
+    color: white;
+}
+.line{
+    color: white;
+    position: relative;
+    bottom: 40px;
+}
+.arrow{
+    position: relative;
+    left: 100px;
+    color: orange;
+}
+.arrow1{
+    position: relative;
+    left: 115px;
+    color: orange;
+}
+.arrow2{
+    position: relative;
+    left: 175px;
+    color: orange;
+}
